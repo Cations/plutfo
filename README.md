@@ -13,7 +13,7 @@ No C nor C++ code is used at all, just Lua
 Just grab it
 
 ```shell
-git clone git@github.com/Cations/plutfo.git
+git clone git@github.com:Cations/plutfo.git
 ```
 
 And require it into your project and use it as you would use the [`utf8`][3] module
