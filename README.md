@@ -22,19 +22,19 @@ And require it into your project and use it as you would use the [`utf8`][3] mod
 local utf8 = require "plutfo"
 ```
 
-Check the [UTF-8 section][3] in the [Lua Manual][8] for info on the available functions. Or the [Wiki][9] for more in depth examples (**WIP #3**)
+Check the [UTF-8 section][3] in the [Lua Manual][8] for info on the available functions. Or the [Wiki][9] for more in depth examples ([#3][18])
 
 ##Benchmarks
 
-Yet to come! (#2) But it should be slower in Lua 5.1 to Lua 5.3 compared to the native [`utf8`][3] module or [`lutf8`][4]
+Yet to come! ([#2][17]) But it should be slower in Lua 5.1 to Lua 5.3 compared to the native [`utf8`][3] module or [`lutf8`][4]
 
 Could be faster in [LuaJIT][10] because it requires less calls to native code, which the JIT compiler can't optimize, yet it uses `string.gmatch` a lot which can't be optimized either so who knows
 
 ##Spec
 
-Currently there is no spec (#2), but I'm working on it, plutfo should work as intended most of the time.
+Currently there is no spec ([#2][17]), but I'm working on it, plutfo should work as intended most of the time.
 
-Errors exist mainly because plutfo doesn't error on wrong arguments or when an invalid byte sequence is found. This needs to be fixed, check issue #1
+Errors exist mainly because plutfo doesn't error on wrong arguments or when an invalid byte sequence is found ([#1][16])
 
 ##Credits
 
@@ -57,9 +57,13 @@ Copyright (c) 2016 [Cations][15] ([Pablo A. Mayobre][16])
 [9]:https://www.github.com/Cations/plutfo/wiki
 [10]:http://www.luajit.org/luajit.html
 
-[12]:https://www.github.com/markandgo
-[13]:https://gist.github.com/markandgo/5776124
+[11]:https://www.github.com/markandgo
+[12]:https://gist.github.com/markandgo/5776124
 
-[14]:https://www.github.com/Cations/plutfo/blob/master/LICENSE
-[15]:https://www.github.com/Cations
-[16]:https://www.github.com/Positive07
+[13]:https://www.github.com/Cations/plutfo/blob/master/LICENSE
+[14]:https://www.github.com/Cations
+[15]:https://www.github.com/Positive07
+
+[16]:https://www.github.com/Cations/plutfo/issues/1
+[17]:https://www.github.com/Cations/plutfo/issues/2
+[18]:https://www.github.com/Cations/plutfo/issues/3
